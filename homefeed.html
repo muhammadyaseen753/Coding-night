@@ -12,16 +12,33 @@
 
 <div class="container">
 
-  <div class="sidebar">
-    <h3 onclick="window.location.href = 'trending.html';">🔥 Trending</h3>
-    <div class="item">#1 – 30 min JS Challenge</div>
-    <div class="item">#2 – Debugging Night</div>
-    <div class="item">#3 – DOM Mastery</div>
+        <aside class="sidebar" role="navigation" aria-label="Sidebar">
+            <h1>Coding Night</h1>
 
-    <h3>👥 Teams</h3>
-    <div class="item">Team Alpha — 85% progress</div>
-    <div class="item">Team Shadow — 40% progress</div>
-  </div>
+            <section class="sidebar-section">
+                <h3 onclick="window.location.href='trending.html';" role="link" tabindex="0">🔥 Trending</h3>
+                <div class="item">#1 – JS Challenge</div>
+                <div class="item">#2 – Debugging Night</div>
+                <div class="item">#3 – DOM Mastery</div>
+            </section>
+
+            <section class="sidebar-section">
+                <h3 onclick="window.location.href='homefeed.html';" style="color: #00ddff;" role="link" tabindex="0">📌 Posts</h3>
+                <div class="item">2 new posts</div>
+            </section>
+
+            <section class="sidebar-section">
+                <h3>👥 Teams</h3>
+                <div class="item">Team Alpha – 85% progress</div>
+                <div class="item">Team Shadow – 40% progress</div>
+                <div class="item">Team Debuggers – 67% progress</div>
+                <div class="item">Team Velocity – 92% progress</div>
+            </section>
+
+
+
+            <button class="signout" type="button" aria-label="Sign out">Sign Out</button>
+        </aside>
 
   <div class="feed">
 

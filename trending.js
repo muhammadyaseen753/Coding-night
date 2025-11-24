@@ -17,8 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    
-    // Join button functionality
+
     if(feed){
         feed.addEventListener('click', function(e){
             if(e.target.classList.contains('join')){
@@ -100,3 +99,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
     });
+ document.querySelector('.signout').addEventListener('click', () => {
+    alert("You have been signed out!");
+    location.href = "login.html"; 
+    localStorage.clear();
+});

@@ -52,7 +52,11 @@ feed.addEventListener('click', function(e) {
 });
 
 
-
+document.querySelector('.signout').addEventListener('click', () => {
+    alert("You have been signed out!");
+    location.href = "login.html"; 
+    localStorage.clear();
+});
 
  document.getElementById('anotherpostlike').addEventListener('click', function(e) {
     e.preventDefault();

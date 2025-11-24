@@ -8,6 +8,7 @@ document.querySelectorAll('.sidebar .item').forEach(item => {
 document.querySelector('.signout').addEventListener('click', () => {
     alert("You have been signed out!");
     location.href = "login.html"; 
+    localStorage.clear();
 });
 
 document.querySelectorAll('.team-card').forEach(card => {

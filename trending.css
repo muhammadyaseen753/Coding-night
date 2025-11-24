@@ -153,7 +153,17 @@ button {
 .hard-button:hover {
   background: orangered;
 }
-
+.signout {
+    margin-top: 20px;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    background: #ff4444;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
 @media (max-width: 880px) {
   .container {
     flex-direction: column;
