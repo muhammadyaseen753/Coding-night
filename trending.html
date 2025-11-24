@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coding Night – Trending Feed</title>
+<link rel="stylesheet" href="trending.css">
+</head>
+<body>
+
+<div class="container">
+
+  
+  <div class="sidebar">
+    <h3 onclick="document.location.href = 'homefeed.html'">Posts</h3>
+    <div class="item">2 new posts</div>
+    <h3>Teams</h3>
+    <div class="item">Team Alpha — 85% progress</div>
+    <div class="item">Team Shadow — 40% progress</div>
+  </div>
+
+  <!-- Feed -->
+  <div class="feed">
+
+    <header>
+      <h1>Welcome, Developer</h1>
+    </header> 
+    <div id="postForm">
+      <textarea id="postText" placeholder="What's happening?"></textarea>
+      <input type="text" id="postImg" placeholder="Image URL (optional)">
+      <div style="display: flex;gap: 10px;">
+        <form>
+        <input type="radio" id="postDifficultyEasy" name="postDifficulty" value="easy" style="display: none;">
+        <label for="postDifficultyEasy"><a href="#" class="ez-button" style="text-decoration: none;color: white;">Easy</a></label>
+        <input type="radio" id="postDifficultyMedium" name="postDifficulty" value="medium" style="display: none;">
+        <label for="postDifficultyMedium"><a href="#" class="medium-button" style="text-decoration: none;color: white;">Medium</a></label>
+        <input type="radio" id="postDifficultyHard" name="postDifficulty" value="hard" style="display: none;">
+        <label for="postDifficultyHard"><a href="#" class="hard-button" style="text-decoration: none;color: white;">Hard</a></label>
+      </form>
+      </div>
+      <br>
+      <button id="Postify">Post</button>
+    </div>
+   <br>
+    <div class="post">
+      <div class="post-header">30 min JS Challenge</div>
+      <a href="#" class="ez-button" style="text-decoration: none;color: white;">Easy</a>
+      <br>
+      <br>
+      <div class="post-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque obcaecati numquam vitae ducimus, labore aspernatur soluta ipsum temporibus beatae, laboriosam ea laudantium placeat ad accusamus amet aperiam deserunt saepe quibusdam • by saraahmedabni • <span class="people-joined">1257</span> people</div>
+      <div class="post-actions">
+        <div class="join">join</div>
+      </div>
+      <img src="https://i.imgur.com/qU7ZqVQ.jpeg" alt="">
+      
+</div>
+    <div class="post">
+      <div class="post-header">debugging Night</div>
+      <a href="#" class="hard-button" style="text-decoration: none;color: white;">Hard</a>
+      <br>
+      <br>
+      <div class="post-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque obcaecati numquam vitae ducimus, labore aspernatur soluta ipsum temporibus beatae, laboriosam ea laudantium placeat ad accusamus amet aperiam deserunt saepe quibusdam • by saraahmedabni • <span class="people-joined">567</span> people</div>
+      <div class="post-actions">
+        <div class="join">join</div>
+      </div>
+
+  </div>
+      <div class="post">
+      <div class="post-header">DOM Mastery</div>
+      <a href="#" class="medium-button" style="text-decoration: none;color: white;">Medium</a>
+      <br>
+      <br>
+      <div class="post-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque obcaecati numquam vitae ducimus, labore aspernatur soluta ipsum temporibus beatae, laboriosam ea laudantium placeat ad accusamus amet aperiam deserunt saepe quibusdam • by saraahmedabni • <span class="people-joined">748</span> people</div>
+      <div class="post-actions">
+        <div class="join">join</div>
+      </div>
+
+  </div>
+<script src="trending.js"></script>
+
+</body>
+</html>
+

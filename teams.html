@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Coding Night — Teams Dashboard</title>
+     <link rel="stylesheet" href="homefeed.css">
+<link rel="stylesheet" href="team.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar" role="navigation" aria-label="Sidebar">
+            <h1>Coding Night</h1>
+
+            <section class="sidebar-section">
+                <h3 onclick="window.location.href='trending.html';" role="link" tabindex="0">🔥 Trending</h3>
+                <div class="item">#1 – JS Challenge</div>
+                <div class="item">#2 – Debugging Night</div>
+                <div class="item">#3 – DOM Mastery</div>
+            </section>
+
+            <section class="sidebar-section">
+                <h3 onclick="window.location.href='homefeed.html';" style="color: #00ddff;" role="link" tabindex="0">📌 Posts</h3>
+            </section>
+
+            <section class="sidebar-section">
+                <h3>👥 Teams</h3>
+                <div class="item">Team Alpha – 85% progress</div>
+                <div class="item">Team Shadow – 40% progress</div>
+                <div class="item">Team Debuggers – 67% progress</div>
+                <div class="item">Team Velocity – 92% progress</div>
+            </section>
+
+            <section class="sidebar-section">
+                <h3>💼 Business Sector</h3>
+                <div class="item">Sponsorships</div>
+                <div class="item">Partnership Deals</div>
+                <div class="item">Branding Requests</div>
+            </section>
+
+            <section class="sidebar-section">
+                <h3>🐙 GitHub</h3>
+                <div class="item"><a href="https://github.com/">Visit Repository</a></div>
+                <div class="item">Contributors</div>
+                <div class="item">Open Issues</div>
+            </section>
+
+            <button class="signout" type="button" aria-label="Sign out">Sign Out</button>
+        </aside>
+
+        <main class="feed" role="main">
+            <header class="page-header">
+                <h1>Team Dashboard</h1>
+                <p>Manage teams, tasks, and developer activity.</p>
+            </header>
+
+            <section class="team-section" aria-labelledby="teams-overview">
+                <h2 id="teams-overview">Teams Overview</h2>
+            </section>
+
+            <section class="github-section" aria-labelledby="github-activity">
+                <h2 id="github-activity">GitHub Activity</h2>
+
+                <article class="github-card">
+                    <h3>Latest Commits</h3>
+                    <ul>
+                        <li>UI Dark Mode Improvement – 2 hrs ago</li>
+                        <li>Fixed Feed Rendering Bug – 6 hrs ago</li>
+                        <li>Added Team API Endpoint – 1 day ago</li>
+                    </ul>
+                </article>
+
+                <article class="github-card">
+                    <h3>Open Issues</h3>
+                    <ul>
+                        <li>#32 – Avatar upload fails</li>
+                        <li>#29 – Feed scroll glitch</li>
+                        <li>#21 – Theme color mismatch</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="business-section" aria-labelledby="business-sector">
+                <h2 id="business-sector">Business Sector</h2>
+
+                <article class="business-card">
+                    <h3>Sponsorship Deals</h3>
+                    <p>5 Active – Including JetBrains &amp; Vercel</p>
+                </article>
+
+                <article class="business-card">
+                    <h3>Partner Companies</h3>
+                    <p>Meta, Shopify, DigitalOcean, Hashnode</p>
+                </article>
+
+                <article class="business-card">
+                    <h3>Brand Requests</h3>
+                    <p>12 Pending → Awaiting Approval</p>
+                </article>
+            </section>
+        </main>
+    </div>
+    <script src="team.js"></script>
+</body>
+</html>

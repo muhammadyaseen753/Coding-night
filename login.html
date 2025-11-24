@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Coding Night - Login & Signup</title>
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">Coding Night</div>
+            <div class="tagline">Build. Connect. Collaborate.</div>
+        </div>
+        
+        <!-- Login Form -->
+        <div class="form-container" id="login-form-container">
+            <div class="auth-section">
+                    <a style="text-align: center;padding-top: 20px;font-size: 40px;">Sign Up</a>
+                </div>
+            
+            <div class="divider"></div>
+            
+            <form id="signup-form">
+                <div class="form-group">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" class="input-field" id="signup-name" placeholder="John Doe" required>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="input-field" id="signup-email" placeholder="dev@example.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">Password</label>
+                    <input type="password" class="input-field" id="signup-password" placeholder="***********" required>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label" id="c-pasword">Confirm Password</label>
+                    <input type="password" class="input-field" id="signup-confirm-password" placeholder="***********" required>
+                </div>
+                
+                <button type="submit" class="auth-btn" id="signup-btn" onclick="">Create Account</button>
+            </form>
+        </div>
+        
+        <div class="terms">
+            By joining, you agree to our <a href="#" id="terms-link">Terms of Service</a> and <a href="#" id="privacy-link">Privacy Policy</a>
+        </div>
+    </div>
+
+    <script src="login.js">
+       
+    </script>
+</body>
+</html>
