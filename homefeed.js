@@ -38,6 +38,7 @@ document.getElementById('Postify').addEventListener('click', function (e) {
         </div>
     `;
 
+
     feed.prepend(newDiv);
 
     document.getElementById('postText').value = "";
